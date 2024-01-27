@@ -2,7 +2,8 @@
   integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="home_page.css">
-<!-- -------------------------About US aka Homepage starts--------------------------- -->
+<script type="text/javascript" src="addtocart.js"></script>
+
 <header><input type="checkbox" name="" id="toggler">
   <label for="toggler" class="fa-solid fa-bars"></label>
   <a href="homepage.html" class="logo">The Standing Desk Company<span>.</span></a>
@@ -11,31 +12,40 @@
     <a href="rising_desks.html">Rising desks</a>
     <a href="about.html">Contact </a>
     <a href="health_benefits.html">Health benefits</a>
-    <a href="#cart">Add to cart</a>
+
   </nav>
   <div class="icons">
-    <a href="#" class="fas fa-heart"></a>
+
     <a href="#" class="fas fa-shopping-cart"></a>
-    <a href="#" class="fas fa-user"></a>
+
   </div>
 </header>
 <!-- ------------------- BANNER SECTION ---------------------------- -->
 <section class="showD">
   <div class="description">
     <h3>Available Exotic Minimal <span> Laptop </span> Desks </h3>
-    <p>-Choose from our selected range of well-crafted premium quality desks</p>
+    <!-- --------------------- FLOATs ------------------ -->
+    <div class="float1">
+      <p class="floatlaptopdes">- Exclusive to laptops</p>
+      <img src="Desk_Images/float1.png" alt="Floating laptop">
+    </div>
+    <div class="float2">
+      <p class="floatdelivery">- Free delivery</p>
+      <img src="Desk_Images/float2.png" alt="Floating van">
+    </div>
+    <div class="float3">
+      <p class="floatpremium">- Premium quality</p>
+      <img src="Desk_Images/float3.png" alt="Floating quality seal">
+    </div>
   </div>
   <div class="solodesk">
     <img src="Desk_Images\solo.webp" alt="Dark Standing Desk">
   </div>
 </section>
-
-<!-- -------------------- PRODUCT SECTION --------------------- -->
 <section class="products" id="products">
-  <!-- <h1 class="heading"> Laptop <span>Desks</span></h1> -->
   <div class="box-container">
     <!-- --------------- PRODUCT CARD 1 ------------------- -->
-    <div class="box">
+    <div class="box" id="item1">
       <div class="image">
         <img src="Desk_Images\laptop1.jpg" alt="laptop1">
       </div>
@@ -44,14 +54,14 @@
         <div class="price">£55.10</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
+
         <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
       </div>
     </div>
     <!-- -------------------- PRODUCT CARD 2 ------------------- -->
 
-    <div class="box">
+    <div class="box" id="item2">
       <div class="image">
         <img src="Desk_Images\laptop2.jpg" alt="laptop2">
       </div>
@@ -60,13 +70,13 @@
         <div class="price">£53.53</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
+
         <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
       </div>
     </div>
     <!-- -------------------- PRODUCT CARD 3 ------------------- -->
-    <div class="box">
+    <div class="box" id="item3">
       <div class="image">
         <img src="Desk_Images\laptop3.jpg" alt="laptop3">
       </div>
@@ -75,13 +85,12 @@
         <div class="price">£68.48</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
         <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
       </div>
     </div>
     <!-- -------------------- PRODUCT CARD 4 ------------------- -->
-    <div class="box">
+    <div class="box" id="itme4">
       <div class="image">
         <img src="Desk_Images\laptop4.jpg" alt="laptop4">
       </div>
@@ -90,9 +99,9 @@
         <div class="price">£121.22</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
+        <a href="#" class="fas fa-shopping-cart" onclick="addtocart('item1')"></a>
+
       </div>
     </div>
     <!-- -------------------- PRODUCT CARD 5 ------------------- -->
@@ -105,9 +114,9 @@
         <div class="price">£130.78</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
+
         <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
       </div>
     </div>
     <!-- -------------------- PRODUCT CARD 6 ------------------- -->
@@ -120,13 +129,17 @@
         <div class="price">£47.23</div>
       </div>
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
+
         <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-share"></a>
+
       </div>
     </div>
   </div>
+
 </section>
 <footer>
-
+  <div class="author-info">
+    <p>© 2024 The Standing Desk Company. All rights reserved.</p>
+    <p>Designed by Shadman Sikder</p>
+  </div>
 </footer>
